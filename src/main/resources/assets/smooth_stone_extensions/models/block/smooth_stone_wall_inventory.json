@@ -1,0 +1,7 @@
+{
+  "parent": "smooth_stone_extensions:block/bordered_wall_inventory",
+  "textures": {
+    "0": "minecraft:block/smooth_stone",
+    "particle": "minecraft:block/smooth_stone"
+  }
+}

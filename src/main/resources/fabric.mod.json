@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "smooth_stone_extensions",
+  "version": "${version}",
+  "name": "Smooth Stone Extensions",
+  "description": "Adds Smooth Stone Stairs and Walls!",
+  "authors": ["SoundsoftheSun"],
+  "contact": {
+    "homepage": "https://github.com/SoundsoftheSun/Smooth-Stone-Extensions"
+  },
+  "license": "MIT",
+  "icon": "assets/smooth_stone_extensions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.soundsofthesun.smoothStone.SmoothStone"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

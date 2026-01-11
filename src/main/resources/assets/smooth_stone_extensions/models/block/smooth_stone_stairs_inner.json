@@ -1,0 +1,7 @@
+{
+  "parent": "smooth_stone_extensions:block/inner_bordered_stairs",
+  "textures": {
+    "0": "minecraft:block/smooth_stone",
+    "particle": "minecraft:block/smooth_stone"
+  }
+}
