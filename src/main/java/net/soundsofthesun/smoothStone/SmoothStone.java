@@ -10,10 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.StairBlock;
-import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Function;
@@ -26,9 +23,17 @@ public class SmoothStone implements ModInitializer {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.accept(SMOOTH_STONE_STAIRS.asItem());
             itemGroup.accept(SMOOTH_STONE_WALL.asItem());
+            itemGroup.accept(POLISHED_SMOOTH_STONE.asItem());
             itemGroup.accept(POLISHED_SMOOTH_STONE_STAIRS.asItem());
         });
     }
+
+    public static final Block POLISHED_SMOOTH_STONE = register(
+            "polished_smooth_stone",
+            RotatedPillarBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE),
+            true
+    );
 
     public static final Block SMOOTH_STONE_STAIRS = register(
             "smooth_stone_stairs",

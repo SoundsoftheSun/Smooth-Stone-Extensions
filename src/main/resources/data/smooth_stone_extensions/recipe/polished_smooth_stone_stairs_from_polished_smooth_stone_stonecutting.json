@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "smooth_stone_extensions:polished_smooth_stone",
+  "result": {
+    "count": 1,
+    "id": "smooth_stone_extensions:polished_smooth_stone_stairs"
+  }
+}
