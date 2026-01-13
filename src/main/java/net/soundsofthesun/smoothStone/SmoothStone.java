@@ -24,8 +24,8 @@ public class SmoothStone implements ModInitializer {
             itemGroup.accept(SMOOTH_STONE_STAIRS.asItem());
             itemGroup.accept(SMOOTH_STONE_WALL.asItem());
             itemGroup.accept(POLISHED_SMOOTH_STONE.asItem());
-            itemGroup.accept(POLISHED_SMOOTH_STONE_WALL.asItem());
             itemGroup.accept(POLISHED_SMOOTH_STONE_STAIRS.asItem());
+            itemGroup.accept(POLISHED_SMOOTH_STONE_WALL.asItem());
         });
     }
 
