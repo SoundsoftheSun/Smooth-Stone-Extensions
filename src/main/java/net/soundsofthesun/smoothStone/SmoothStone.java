@@ -26,6 +26,7 @@ public class SmoothStone implements ModInitializer {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register((itemGroup) -> {
             itemGroup.accept(SMOOTH_STONE_STAIRS.asItem());
             itemGroup.accept(SMOOTH_STONE_WALL.asItem());
+            itemGroup.accept(POLISHED_SMOOTH_STONE_STAIRS.asItem());
         });
     }
 
@@ -43,6 +44,12 @@ public class SmoothStone implements ModInitializer {
             true
     );
 
+    public static final Block POLISHED_SMOOTH_STONE_STAIRS = register(
+            "polished_smooth_stone_stairs",
+            p -> new StairBlock(Blocks.SMOOTH_STONE.defaultBlockState(), p),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS),
+            true
+    );
 
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
         ResourceKey<Block> blockKey = keyOfBlock(name);
