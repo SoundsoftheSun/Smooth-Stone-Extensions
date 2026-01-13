@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "misc",
   "key": {
     "#": "smooth_stone_extensions:polished_smooth_stone"
   },
   "pattern": [
-    "#  ",
-    "## ",
+    "###",
     "###"
   ],
   "result": {
-    "count": 4,
-    "id": "smooth_stone_extensions:polished_smooth_stone_stairs"
+    "count": 6,
+    "id": "smooth_stone_extensions:polished_smooth_stone_wall"
   }
 }

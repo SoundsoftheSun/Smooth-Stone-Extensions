@@ -24,6 +24,7 @@ public class SmoothStone implements ModInitializer {
             itemGroup.accept(SMOOTH_STONE_STAIRS.asItem());
             itemGroup.accept(SMOOTH_STONE_WALL.asItem());
             itemGroup.accept(POLISHED_SMOOTH_STONE.asItem());
+            itemGroup.accept(POLISHED_SMOOTH_STONE_WALL.asItem());
             itemGroup.accept(POLISHED_SMOOTH_STONE_STAIRS.asItem());
         });
     }
@@ -44,6 +45,13 @@ public class SmoothStone implements ModInitializer {
 
     public static final Block SMOOTH_STONE_WALL = register(
             "smooth_stone_wall",
+            WallBlock::new,
+            BlockBehaviour.Properties.ofLegacyCopy(Blocks.SMOOTH_STONE).forceSolidOn(),
+            true
+    );
+
+    public static final Block POLISHED_SMOOTH_STONE_WALL = register(
+            "polished_smooth_stone_wall",
             WallBlock::new,
             BlockBehaviour.Properties.ofLegacyCopy(Blocks.SMOOTH_STONE).forceSolidOn(),
             true

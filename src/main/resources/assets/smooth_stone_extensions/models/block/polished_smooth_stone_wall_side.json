@@ -1,0 +1,8 @@
+{
+  "parent": "smooth_stone_extensions:block/polished_bordered_template_wall_side",
+  "textures": {
+    "0": "minecraft:block/smooth_stone",
+    "1": "minecraft:block/smooth_stone_slab_side",
+    "particle": "minecraft:block/smooth_stone"
+  }
+}
