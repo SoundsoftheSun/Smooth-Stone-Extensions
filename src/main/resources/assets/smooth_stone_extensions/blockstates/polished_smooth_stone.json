@@ -1,16 +1,7 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "smooth_stone_extensions:block/polished_smooth_stone_horizontal",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
+    "": {
       "model": "smooth_stone_extensions:block/polished_smooth_stone"
-    },
-    "axis=z": {
-      "model": "smooth_stone_extensions:block/polished_smooth_stone_horizontal",
-      "x": 90
     }
   }
 }

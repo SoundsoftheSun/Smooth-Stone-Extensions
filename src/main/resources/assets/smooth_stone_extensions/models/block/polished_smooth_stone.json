@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "smooth_stone_extensions:block/tiles",
   "textures": {
-    "end": "minecraft:block/smooth_stone",
-    "side": "minecraft:block/smooth_stone_slab_side"
+    "0": "minecraft:block/smooth_stone_slab_side",
+    "particle": "minecraft:block/smooth_stone_slab_side"
   }
 }

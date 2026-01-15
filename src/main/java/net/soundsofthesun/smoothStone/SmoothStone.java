@@ -30,7 +30,7 @@ public class SmoothStone implements ModInitializer {
     }
 
     public static final Block POLISHED_SMOOTH_STONE = register(
-            "polished_smooth_stone",
+            "polished_smooth_stone",// Smooth Stone Tiles
             RotatedPillarBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE),
             true
