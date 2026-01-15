@@ -31,7 +31,7 @@ public class SmoothStone implements ModInitializer {
 
     public static final Block POLISHED_SMOOTH_STONE = register(
             "polished_smooth_stone",// Cut Smooth Stone
-            RotatedPillarBlock::new,
+            Block::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_STONE),
             true
     );
